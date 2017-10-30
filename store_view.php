@@ -1,3 +1,4 @@
+//Auther: Satish Kumar Singh
 	<div class="container">
 		<div class="row store1">
 	<?php foreach ($result as $item):
