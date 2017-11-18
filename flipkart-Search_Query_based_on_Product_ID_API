@@ -9,7 +9,7 @@ otracker=clp_omu_New+Launches_4_6+%22+Full+HD%2B+Display_mobile-phones-store_TME
 2. Now i have extracted the product id from above url
 pid=MOBEZYPVKKX5KDZD
 
-3. Now i am calling the flipkart API below
+3. Now i am calling the flipkart API below using postman 
 
 https://affiliate-api.flipkart.net/affiliate/product/json?id=MOBEZYPVKKX5KDZD
 
