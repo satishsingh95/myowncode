@@ -1,0 +1,80 @@
+This file i have created to explain my self that how to call flipkart API (Search Query based on Product ID API) 
+to get the product data by passing a paramter product id.
+1. First i have copied the product url from browser
+
+https://www.flipkart.com/oppo-f5-gold-32-gb/p/itmezypvemsyzy9s?pid=MOBEZYPVKKX5KDZD&
+lid=LSTMOBEZYPVKKX5KDZDU02SZH&fm=neo/merchandising&iid=M_8034cb6c-128b-4c86-a1af-5440eb245308_6.TMEE16LX4G&
+otracker=clp_omu_New+Launches_4_6+%22+Full+HD%2B+Display_mobile-phones-store_TMEE16LX4G_5&cid=TMEE16LX4G
+
+2. Now i have extracted the product id from above url
+pid=MOBEZYPVKKX5KDZD
+
+3. Now i am calling the flipkart API below
+
+https://affiliate-api.flipkart.net/affiliate/product/json?id=MOBEZYPVKKX5KDZD
+
+here i am passing a parameter product id-  MOBEZYPVKKX5KDZD
+
+Along with above url, i have to pass two headers
+Fk-Affiliate-Id     mayuriaro1
+Fk-Affiliate-Token  ***********
+
+After calling the API following responce recived along  status 200 ok
+{
+  "productBaseInfo": {
+    "productIdentifier": {
+      "productId": "MOBEZYPVKKX5KDZD",
+      "categoryPaths": {
+        "categoryPath": [
+          [
+            {
+              "title": "Mobiles>Handsets"
+            }
+          ]
+        ]
+      }
+    },
+    "productAttributes": {
+      "title": "OPPO F5 (Gold, 32 GB)",
+      "productDescription": "NA",
+      "imageUrls": {
+        "unknown": "http://img.fkcdn.com/image/j9d3bm80/mobile/d/z/d/oppo-f5-cph1723-800-imaezfyg3xvgyvku.jpeg"
+      },
+      "maximumRetailPrice": {
+        "amount": 20990,
+        "currency": "INR"
+      },
+      "sellingPrice": {
+        "amount": 19990,
+        "currency": "INR"
+      },
+      "productUrl": "https://dl.flipkart.com/dl/oppo-f5-gold-32-gb/p/itmezypvemsyzy9s?pid=MOBEZYPVKKX5KDZD&affid=mayuriaro1",
+      "productBrand": "OPPO",
+      "inStock": true,
+      "isAvailable": true,
+      "codAvailable": true,
+      "emiAvailable": null,
+      "discountPercentage": 4,
+      "cashBack": null,
+      "offers": [],
+      "size": null,
+      "color": "Gold",
+      "sizeUnit": "",
+      "sizeVariants": "[MOBEZYPVYCT9HMGW, MOBEZYPVKKX5KDZD]",
+      "colorVariants": "[MOBEZPMX9ZB4NRGU, MOBEZPMXWTN5GFYQ, MOBEZYPVYCT9HMGW]",
+      "styleCode": null
+    }
+  },
+  "productShippingBaseInfo": {
+    "shippingOptions": null
+  },
+  "offset": null
+}
+
+4. now from above responce i can extract afflitate url of perticular product (of which the product id 
+has been passed as parameter)
+afflitate url:
+
+https://dl.flipkart.com/dl/oppo-f5-gold-32-gb/p/itmezypvemsyzy9s?pid=MOBEZYPVKKX5KDZD&affid=mayuriaro1
+
+now this link can be shared on your page
