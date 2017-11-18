@@ -10,16 +10,17 @@ otracker=clp_omu_New+Launches_4_6+%22+Full+HD%2B+Display_mobile-phones-store_TME
 pid=MOBEZYPVKKX5KDZD
 
 3. Now i am calling the flipkart API below using postman 
-
-https://affiliate-api.flipkart.net/affiliate/product/json?id=MOBEZYPVKKX5KDZD
-
+old API 
+###https://affiliate-api.flipkart.net/affiliate/product/json?id=MOBEZYPVKKX5KDZD
+new API
+https://affiliate-api.flipkart.net/affiliate/1.0/product.json?id=MOBEZYPVKKX5KDZD
 here i am passing a parameter product id-  MOBEZYPVKKX5KDZD
 
 Along with above url, i have to pass two headers
 Fk-Affiliate-Id     mayuriaro1
 Fk-Affiliate-Token  ***********
 
-After calling the API following responce recived along  status 200 ok
+After calling the OLD API following responce recived along  status 200 ok
 {
   "productBaseInfo": {
     "productIdentifier": {
@@ -71,10 +72,500 @@ After calling the API following responce recived along  status 200 ok
   "offset": null
 }
 
+After calling the new API following responce recived along  status 200 ok
+{
+  "productBaseInfoV1": {
+    "productId": "MOBEZYPVKKX5KDZD",
+    "title": "OPPO F5 (Gold, 32 GB)(4 GB RAM)",
+    "productDescription": "NA",
+    "imageUrls": {
+      "200x200": "https://rukminim1.flixcart.com/image/200/200/j9d3bm80/mobile/d/z/d/oppo-f5-cph1723-original-imaezfyg3xvgyvku.jpeg?q=90",
+      "400x400": "https://rukminim1.flixcart.com/image/400/400/j9d3bm80/mobile/d/z/d/oppo-f5-cph1723-original-imaezfyg3xvgyvku.jpeg?q=90",
+      "800x800": "https://rukminim1.flixcart.com/image/800/800/j9d3bm80/mobile/d/z/d/oppo-f5-cph1723-original-imaezfyg3xvgyvku.jpeg?q=90"
+    },
+    "productFamily": [
+      "MOBEZPMX9ZB4NRGU",
+      "MOBEZPMXWTN5GFYQ",
+      "MOBEZYPVYCT9HMGW"
+    ],
+    "maximumRetailPrice": {
+      "amount": 20990,
+      "currency": "INR"
+    },
+    "flipkartSellingPrice": {
+      "amount": 19990,
+      "currency": "INR"
+    },
+    "flipkartSpecialPrice": {
+      "amount": 19990,
+      "currency": "INR"
+    },
+    "productUrl": "https://dl.flipkart.com/dl/oppo-f5-gold-32-gb/p/itmezypvemsyzy9s?pid=MOBEZYPVKKX5KDZD&affid=mayuriaro1",
+    "productBrand": "OPPO",
+    "inStock": true,
+    "codAvailable": true,
+    "discountPercentage": 4,
+    "offers": [],
+    "categoryPath": "Mobiles>Handsets",
+    "attributes": {
+      "size": "",
+      "color": "Gold",
+      "storage": "32 GB",
+      "sizeUnit": "",
+      "displaySize": ""
+    }
+  },
+  "productShippingInfoV1": {
+    "shippingCharges": {
+      "amount": 0,
+      "currency": "INR"
+    },
+    "estimatedDeliveryTime": "",
+    "sellerName": "Adilaxmi E Commerce Pvt Ltd",
+    "sellerAverageRating": 4.5,
+    "sellerNoOfRatings": 1248,
+    "sellerNoOfReviews": 19
+  },
+  "categorySpecificInfoV1": {
+    "keySpecs": [
+      "4 GB RAM | 32 GB ROM | Expandable Upto 256 GB",
+      "6 inch Full HD+ Display",
+      "16MP Rear Camera | 20MP Front Camera",
+      "3200 mAh Battery",
+      "Mediatek MT6763T Octa Core 2.5 GHz Processor"
+    ],
+    "detailedSpecs": [
+      "4 GB RAM | 32 GB ROM | Expandable Upto 256 GB",
+      "6 inch Full HD+ Display",
+      "16MP Rear Camera | 20MP Front Camera",
+      "3200 mAh Battery",
+      "Mediatek MT6763T Octa Core 2.5 GHz Processor"
+    ],
+    "specificationList": [
+      {
+        "key": "General",
+        "values": [
+          {
+            "key": "In The Box",
+            "value": [
+              "Handset, Earphones, Micro USB Cable, Charger, SIM Ejector Tool, Documentation, Case"
+            ]
+          },
+          {
+            "key": "Model Number",
+            "value": [
+              "CPH1723"
+            ]
+          },
+          {
+            "key": "Model Name",
+            "value": [
+              "F5"
+            ]
+          },
+          {
+            "key": "Color",
+            "value": [
+              "Gold"
+            ]
+          },
+          {
+            "key": "Browse Type",
+            "value": [
+              "Smartphones"
+            ]
+          },
+          {
+            "key": "SIM Type",
+            "value": [
+              "Dual Sim"
+            ]
+          },
+          {
+            "key": "Hybrid Sim Slot",
+            "value": [
+              "No"
+            ]
+          },
+          {
+            "key": "Touchscreen",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "OTG Compatible",
+            "value": [
+              "Yes"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Display Features",
+        "values": [
+          {
+            "key": "Display Size",
+            "value": [
+              "6 inch"
+            ]
+          },
+          {
+            "key": "Resolution",
+            "value": [
+              "2160 x 1080 Pixels"
+            ]
+          },
+          {
+            "key": "Resolution Type",
+            "value": [
+              "Full HD+"
+            ]
+          },
+          {
+            "key": "Display Type",
+            "value": [
+              "TFT-LTPS"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "OS & Processor Features",
+        "values": [
+          {
+            "key": "Operating System",
+            "value": [
+              "Android Nougat 7.1"
+            ]
+          },
+          {
+            "key": "Processor Type",
+            "value": [
+              "Mediatek MT6763T Octa Core 2.5 GHz"
+            ]
+          },
+          {
+            "key": "Processor Core",
+            "value": [
+              "Octa Core"
+            ]
+          },
+          {
+            "key": "Primary Clock Speed",
+            "value": [
+              "2.5 GHz"
+            ]
+          },
+          {
+            "key": "Operating Frequency",
+            "value": [
+              "GSM: 850 / 900 / 1800 / 1900 MHz, WCDMA - B1 / B5 / B8, 4G LTE TDD - B38 / B39 / B40 / B41 (2535 - 2655 MHz), FDD - B1 / B3 / B5 / B7 / B8"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Memory & Storage Features",
+        "values": [
+          {
+            "key": "Internal Storage",
+            "value": [
+              "32 GB"
+            ]
+          },
+          {
+            "key": "RAM",
+            "value": [
+              "4 GB"
+            ]
+          },
+          {
+            "key": "Expandable Storage",
+            "value": [
+              "256 GB"
+            ]
+          },
+          {
+            "key": "Supported Memory Card Type",
+            "value": [
+              "microSD"
+            ]
+          },
+          {
+            "key": "Memory Card Slot Type",
+            "value": [
+              "Dedicated Slot"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Camera Features",
+        "values": [
+          {
+            "key": "Primary Camera Available",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Primary Camera",
+            "value": [
+              "16MP"
+            ]
+          },
+          {
+            "key": "Primary Camera Features",
+            "value": [
+              "Auto Focus, F/1.8"
+            ]
+          },
+          {
+            "key": "Secondary Camera Available",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Secondary Camera",
+            "value": [
+              "20MP"
+            ]
+          },
+          {
+            "key": "Secondary Camera Features",
+            "value": [
+              "f/2.0, CMOS Size 1/2.8 inch"
+            ]
+          },
+          {
+            "key": "Video Recording",
+            "value": [
+              "Yes"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Call Features",
+        "values": [
+          {
+            "key": "Video Call Support",
+            "value": [
+              "Yes"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Connectivity Features",
+        "values": [
+          {
+            "key": "Network Type",
+            "value": [
+              "4G, 4G VOLTE, 2G, 3G"
+            ]
+          },
+          {
+            "key": "Supported Networks",
+            "value": [
+              "4G VoLTE, 4G LTE, UMTS, WCDMA"
+            ]
+          },
+          {
+            "key": "Internet Connectivity",
+            "value": [
+              "4G, 3G, Wi-Fi"
+            ]
+          },
+          {
+            "key": "3G",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Micro USB Port",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Wi-Fi",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Wi-Fi Version",
+            "value": [
+              "802.11 a/b/g/n"
+            ]
+          },
+          {
+            "key": "USB Connectivity",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Map Support",
+            "value": [
+              "Google Maps"
+            ]
+          },
+          {
+            "key": "GPS Support",
+            "value": [
+              "Yes"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Other Details",
+        "values": [
+          {
+            "key": "Smartphone",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "SIM Size",
+            "value": [
+              "Dual Nano SIM"
+            ]
+          },
+          {
+            "key": "User Interface",
+            "value": [
+              "ColorOS 3.2"
+            ]
+          },
+          {
+            "key": "SMS",
+            "value": [
+              "Yes"
+            ]
+          },
+          {
+            "key": "Graphics PPI",
+            "value": [
+              "403 PPI"
+            ]
+          },
+          {
+            "key": "User Memory",
+            "value": [
+              "19.3"
+            ]
+          },
+          {
+            "key": "Internal Memory",
+            "value": [
+              "32"
+            ]
+          },
+          {
+            "key": "Sensors",
+            "value": [
+              "Distance Sensor, Light Sensor, G-sensor, E-compass"
+            ]
+          },
+          {
+            "key": "Other Features",
+            "value": [
+              "Supports Video Calls: Only Jio"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Multimedia Features",
+        "values": [
+          {
+            "key": "FM Radio",
+            "value": [
+              "Yes"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Battery & Power Features",
+        "values": [
+          {
+            "key": "Battery Capacity",
+            "value": [
+              "3200 mAh"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Dimensions",
+        "values": [
+          {
+            "key": "Width",
+            "value": [
+              "76 mm"
+            ]
+          },
+          {
+            "key": "Height",
+            "value": [
+              "156.5 mm"
+            ]
+          },
+          {
+            "key": "Depth",
+            "value": [
+              "7.5 mm"
+            ]
+          },
+          {
+            "key": "Weight",
+            "value": [
+              "152 g"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Warranty",
+        "values": [
+          {
+            "key": "Warranty Summary",
+            "value": [
+              "Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories"
+            ]
+          }
+        ]
+      }
+    ],
+    "booksInfo": {
+      "language": null,
+      "binding": null,
+      "pages": null,
+      "publisher": null,
+      "year": 0,
+      "authors": []
+    },
+    "lifeStyleInfo": {
+      "sleeve": null,
+      "neck": null,
+      "idealFor": null
+    }
+  }
+}
+
 4. now from above responce i can extract afflitate url of perticular product (of which the product id 
 has been passed as parameter)
 afflitate url:
-
+old API call data
 https://dl.flipkart.com/dl/oppo-f5-gold-32-gb/p/itmezypvemsyzy9s?pid=MOBEZYPVKKX5KDZD&affid=mayuriaro1
-
+new API call data
+https://dl.flipkart.com/dl/oppo-f5-gold-32-gb/p/itmezypvemsyzy9s?pid=MOBEZYPVKKX5KDZD&affid=mayuriaro1
 now this link can be shared on your page
