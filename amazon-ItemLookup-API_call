@@ -1,3 +1,6 @@
+This file i have created to explain my self that how to call amazon API (ItemLookup API) 
+to get the product data by passing a paramter product id.
+
 1. Get the product url to extract the ASIN or product identifier
 
 first url sample@@@
@@ -360,3 +363,10 @@ echo "Signed URL: \"".$request_url."\"";
         </Item>
     </Items>
 </ItemLookupResponse>
+5. now from above responce i can extract afflitate url of perticular product (of which the product id 
+has been passed as parameter)
+afflitate url:
+https://www.amazon.in/Mi-4-Redmi-Gold-32GB/dp/B01MU2AWLB?psc=1&SubscriptionId=AKIAIL5MN2SJVZITUS5A&
+tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB
+
+now this link can be shared on your page
