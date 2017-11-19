@@ -1,0 +1,76 @@
+1. Get the product url to extract the ASIN or product identifier
+
+first url sample@@@
+https://www.amazon.in/gp/product/B01MU2AWLB/ref=s9_acsd_al_bw_c_x_3_w?pf_rd_m=A1VBAL9TL5WCBF&
+pf_rd_s=merchandised-search-4&pf_rd_r=JDX0DN0HPTMW9RR7BAK8&pf_rd_r=JDX0DN0HPTMW9RR7BAK8&
+pf_rd_t=101&pf_rd_p=4de64a06-8e83-40a9-a61f-37cae0ba1535&pf_rd_p=4de64a06-8e83-40a9-a61f-37cae0ba1535&pf_rd_i=13713623031
+
+product id---
+B01MU2AWLB
+
+second url sample@@@
+https://www.amazon.in/Lenovo-Yoga-Tab-Tablet-Amazon/dp/B01JZ8Z5XE/ref=gbph_img_m-1_6d28_cf224dd3?
+smid=AT95IG9ONZD7S&pf_rd_p=aad846cd-1ae6-47f9-8f89-28cc7fe36d28&pf_rd_s=merchandised-search-1&
+pf_rd_t=101&pf_rd_i=1375458031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_r=H5MSZHYRJHZ5RQF199V0
+
+product id---
+B01JZ8Z5XE
+
+2. other way to extract the ASIN no to look the product information
+ASIN	B01MU2AWLB
+
+3. call the amazon itemlookup API to get the price data and affiliatet url of product
+<?php
+
+// Your Access Key ID, as taken from the Your Account page
+$access_key_id = "AKIAIL5MN2SJVZITUS5A";
+
+// Your Secret Key corresponding to the above ID, as taken from the Your Account page
+$secret_key = ***
+
+// The region you are interested in
+$endpoint = "webservices.amazon.in";
+
+$uri = "/onca/xml";
+
+$params = array(
+    "Service" => "AWSECommerceService",
+    "Operation" => "ItemLookup",
+    "AWSAccessKeyId" => "AKIAIL5MN2SJVZITUS5A",
+    "AssociateTag" => " faducoupon-21",
+    "ItemId" => "B01JZ8Z5XE",
+    "IdType" => "ASIN",
+    "ResponseGroup" => "Images,ItemAttributes,Offers"
+);
+
+// Set current timestamp if not set
+if (!isset($params["Timestamp"])) {
+    $params["Timestamp"] = gmdate('Y-m-d\TH:i:s\Z');
+}
+
+// Sort the parameters by key
+ksort($params);
+
+$pairs = array();
+
+foreach ($params as $key => $value) {
+    array_push($pairs, rawurlencode($key)."=".rawurlencode($value));
+}
+
+// Generate the canonical query
+$canonical_query_string = join("&", $pairs);
+
+// Generate the string to be signed
+$string_to_sign = "GET\n".$endpoint."\n".$uri."\n".$canonical_query_string;
+
+// Generate the signature required by the Product Advertising API
+$signature = base64_encode(hash_hmac("sha256", $string_to_sign, $secret_key, true));
+
+// Generate the signed URL
+$request_url = 'http://'.$endpoint.$uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
+
+echo "Signed URL: \"".$request_url."\"";
+
+?>
+
+
