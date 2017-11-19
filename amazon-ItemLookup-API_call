@@ -73,4 +73,290 @@ echo "Signed URL: \"".$request_url."\"";
 
 ?>
 
-
+4. API responce
+<?xml version="1.0" ?>
+<ItemLookupResponse
+    xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+    <OperationRequest>
+        <HTTPHeaders>
+            <Header Name="UserAgent" Value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"></Header>
+        </HTTPHeaders>
+        <RequestId>c6bc4be8-ad6b-4b06-a1ea-a260f7a573ec</RequestId>
+        <Arguments>
+            <Argument Name="AWSAccessKeyId" Value="AKIAIL5MN2SJVZITUS5A"></Argument>
+            <Argument Name="AssociateTag" Value=" faducoupon-21"></Argument>
+            <Argument Name="IdType" Value="ASIN"></Argument>
+            <Argument Name="ItemId" Value="B01MU2AWLB"></Argument>
+            <Argument Name="Operation" Value="ItemLookup"></Argument>
+            <Argument Name="ResponseGroup" Value="Images,ItemAttributes,Offers"></Argument>
+            <Argument Name="Service" Value="AWSECommerceService"></Argument>
+            <Argument Name="Timestamp" Value="2017-11-19T09:47:58.000Z"></Argument>
+            <Argument Name="Signature" Value="ILaQpd72k+rbs8E9S3KR5V3fQSEYZUqctzJCzf1Oydk="></Argument>
+        </Arguments>
+        <RequestProcessingTime>0.0241404040000000</RequestProcessingTime>
+    </OperationRequest>
+    <Items>
+        <Request>
+            <IsValid>True</IsValid>
+            <ItemLookupRequest>
+                <IdType>ASIN</IdType>
+                <ItemId>B01MU2AWLB</ItemId>
+                <ResponseGroup>Images</ResponseGroup>
+                <ResponseGroup>ItemAttributes</ResponseGroup>
+                <ResponseGroup>Offers</ResponseGroup>
+                <VariationPage>All</VariationPage>
+            </ItemLookupRequest>
+        </Request>
+        <Item>
+            <ASIN>B01MU2AWLB</ASIN>
+            <ParentASIN>B076WWTBKW</ParentASIN>
+            <DetailPageURL>https://www.amazon.in/Mi-4-Redmi-Gold-32GB/dp/B01MU2AWLB?psc=1&SubscriptionId=AKIAIL5MN2SJVZITUS5A&tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB</DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=B01MU2AWLB&SubscriptionId=AKIAIL5MN2SJVZITUS5A&tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/B01MU2AWLB?SubscriptionId=AKIAIL5MN2SJVZITUS5A&tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/B01MU2AWLB?SubscriptionId=AKIAIL5MN2SJVZITUS5A&tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/B01MU2AWLB?SubscriptionId=AKIAIL5MN2SJVZITUS5A&tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">39</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">83</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">259</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31ZpwL1brSL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">16</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31ZpwL1brSL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">40</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31ZpwL1brSL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">40</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31ZpwL1brSL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">58</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31ZpwL1brSL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">85</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31ZpwL1brSL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">265</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31d4ef-bQ3L._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">10</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31d4ef-bQ3L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">25</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31d4ef-bQ3L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">25</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31d4ef-bQ3L._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">37</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31d4ef-bQ3L._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">53</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31d4ef-bQ3L.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">166</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/21G3gcXyrXL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">5</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/21G3gcXyrXL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">13</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/21G3gcXyrXL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">13</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/21G3gcXyrXL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">18</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/21G3gcXyrXL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">27</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/21G3gcXyrXL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">84</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">16</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">39</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">39</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">57</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">83</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31K-g8%2BD-uL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">259</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Binding>Electronics</Binding>
+                <Brand>Mi</Brand>
+                <Color>Gold</Color>
+                <EAN>6954176833754</EAN>
+                <EANList>
+                    <EANListElement>6954176833754</EANListElement>
+                    <EANListElement>6954176836502</EANListElement>
+                </EANList>
+                <Feature>13MP primary camera with 5-elements lens, f/2.2 aperture, PDAF, high dynamic range (HDR), panaroma, 1080p full HD video recording and 5MP front facing camera</Feature>
+                <Feature>12.7 centimeters (5-inch) display with 1280 x 720 pixels resolution and 293 ppi pixel density</Feature>
+                <Feature>Android v6.0.1 Marshmallow operating system with up to 1.4GHz Qualcomm Snapdragon 435 octa core processor with Adreno 505 GPU, 3GB RAM, 32GB internal memory expandable up to 128GB and dual SIM (micro+nano) dual-standby (4G+4G), Hybrid SIM slot</Feature>
+                <Feature>4100mAH lithium-ion battery providing talk-time of 36 hours and standby time of 432 hours</Feature>
+                <Feature>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</Feature>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">276</Height>
+                    <Length Units="hundredths-inches">547</Length>
+                    <Weight Units="hundredths-pounds">33</Weight>
+                    <Width Units="hundredths-inches">35</Width>
+                </ItemDimensions>
+                <Label>Xiaomi</Label>
+                <ListPrice>
+                    <Amount>899900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 8,999.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Xiaomi</Manufacturer>
+                <Model>4</Model>
+                <MPN>MI_4_GOD_32</MPN>
+                <OperatingSystem>Android</OperatingSystem>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">157</Height>
+                    <Length Units="hundredths-inches">587</Length>
+                    <Weight Units="hundredths-pounds">60</Weight>
+                    <Width Units="hundredths-inches">315</Width>
+                </PackageDimensions>
+                <PackageQuantity>1</PackageQuantity>
+                <PartNumber>MI_4_GOD_32</PartNumber>
+                <ProductGroup>Wireless</ProductGroup>
+                <ProductTypeName>PHONE</ProductTypeName>
+                <Publisher>Xiaomi</Publisher>
+                <Size>32 GB</Size>
+                <Studio>Xiaomi</Studio>
+                <Title>Redmi 4 (Gold, 32GB)</Title>
+                <Warranty>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</Warranty>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>899900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 8,999.00</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>1</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/B01MU2AWLB?SubscriptionId=AKIAIL5MN2SJVZITUS5A&tag=%20faducoupon-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU2AWLB</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>MClHirouOY8joCafHiXXlnBsU2NjkzRK%2FdlJUTpONsDWWeCSni6ryVhJ%2FdGHXzvHNevkyHflg9x0%2BhkZmhZDHn6CcIHieBc%2BmlRUMSejah8LVx1Zxaj%2FVIIKBxwJ803wKDNdN5EoIQOBDkqEviLdlv0QuEcNXqmV</OfferListingId>
+                        <Price>
+                            <Amount>899900</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 8,999.00</FormattedPrice>
+                        </Price>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+    </Items>
+</ItemLookupResponse>
