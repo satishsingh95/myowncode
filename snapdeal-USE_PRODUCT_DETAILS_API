@@ -1,0 +1,49 @@
+This file i have created to explain my self that how to call snapdeal API (PRODUCT DETAILS API by passing the product id) 
+to get the product data by passing a paramter product id.
+1. First i have copied the product url from browser
+
+https://www.snapdeal.com/product/micromax-canvas-5-lite-q463/641004781259
+
+2. Now i have extracted the product id from above url
+id=641004781259
+
+3. Now i am calling the snaldeap API below using postman 
+affiliate-feeds.snapdeal.com/feed/product?id=641004781259
+
+here i am passing a parameter product id-  641004781259
+
+Along with above url, i have to pass 3 headers
+Snapdeal-Affiliate-Id: 82438
+Snapdeal-Token-Id: ***
+Accept: application/json
+
+After calling the API following responce recived along  status 200 ok
+
+{
+  "id": 641004781259,
+  "title": "Micromax Canvas 5 Lite Special Edition Q463 (3gb, 16gb, Maple Wood Finish)",
+  "description": "RAM:3 GB Screen Size (in cm):12.7 cm (5) Rear Camera:8 MP Front Camera:5 MP Internal Memory:16GB Battery Capacity (in mAh):2000 Processor Cores:Quad ",
+  "brand": "Micromax",
+  "link": "http://www.snapdeal.com/product/micromax-canvas-5-lite-q463/641004781259?utm_source=aff_prog&utm_campaign=afts&offer_id=17&aff_id=82438",
+  "imageLink": "http://n1.sdlcdn.com/imgs/f/q/2/Micromax-Canvas-5-Lite-Q463-SDL243662020-1-ed5b4.jpg",
+  "subCategoryId": 175,
+  "subCategoryName": "Mobile Phones",
+  "categoryId": 12,
+  "categoryName": "Mobiles & Tablets",
+  "mrp": 8999,
+  "offerPrice": 5999,
+  "effectivePrice": 5999,
+  "availability": "in stock",
+  "sizes": null,
+  "colors": null,
+  "walletCashback": 0
+}
+ 
+4. now from above responce i can extract afflitate url of perticular product (of which the product id 
+has been passed as parameter)
+afflitate url:
+API call data
+http://www.snapdeal.com/product/micromax-canvas-5-lite-q463/641004781259?utm_source=aff_prog&utm_campaign=afts&offer_id=17&aff_id=82438
+
+
+now this link can be shared on your page
