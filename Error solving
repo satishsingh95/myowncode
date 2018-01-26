@@ -11,3 +11,19 @@ Message: Undefined index: id
 to solve this error i have done this..
 $store[0]['id']
 now its working correctly..
+
+
+i was not getting the data from db due to lowercase and upper case mismatch in db and supplied value
+so did this to get the correct value
+
+You can lowercase the value and the passed parameter :
+
+SELECT * FROM `table` WHERE LOWER(`Value`) = LOWER("DickSavagewood")
+
+
+
+to make word in lower case use
+
+strtolower($string)
+to make first letter upper case use
+ucfirst($string)
