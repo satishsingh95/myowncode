@@ -1,0 +1,13 @@
+this was the returned array from database..
+Array ( [0] => Array ( [id] => 1016 [name] => paytm [slag] => paytm [click] => 11 ) )
+I was trying to access the id like this 
+$stores['id']
+
+this was giving error like this
+A PHP Error was encountered
+Severity: Notice
+Message: Undefined index: id
+
+to solve this error i have done this..
+$store[0]['id']
+now its working correctly..
